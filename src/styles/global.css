@@ -1,0 +1,51 @@
+/*
+  ============================================================
+  ESTILOS GLOBALES — B&V Electromedicina
+  ============================================================
+  Tipografía:
+    - Playfair Display (serif, 700): títulos H1–H3
+    - DM Sans (sans-serif, 400/500/600/700): cuerpo y UI
+  ============================================================
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #fff;
+  color: #1B2B3B;
+  font-family: 'DM Sans', system-ui, sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+:focus-visible {
+  outline: 2px solid #8B0000;
+  outline-offset: 2px;
+}
+
+/* Animación del punto "Activo" en el Hero */
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5);
+  }
+  50% {
+    opacity: 0.6;
+    box-shadow: 0 0 0 6px rgba(37, 211, 102, 0);
+  }
+}
